@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+  <script type="module">
+    try {
+      const meshtastic = await import('https://esm.sh/@meshtastic/core');
+      const meshcore = await import('https://esm.sh/@liamcottle/meshcore.js');
+      console.log('Meshtastic core loaded:', meshtastic !== null);
+      console.log('Meshcore loaded:', meshcore !== null);
+      document.body.innerHTML = '<h1>Success</h1>';
+    } catch (e) {
+      console.error(e);
+      document.body.innerHTML = 'Error: ' + e.message;
+    }
+  </script>
+</body>
+</html>
