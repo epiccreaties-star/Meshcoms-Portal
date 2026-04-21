@@ -2,7 +2,7 @@ This is a Meshcoms portal to unify all your Lora Meshcommunications from Meshcor
 
 RUNNING COMMANDS
 
-npm install
+npm install 
 python launcher.py
 
 
